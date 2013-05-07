@@ -27,7 +27,7 @@ function appinstall {
 # Install Favourite Applications
 echo 'Installing selected favourite applications...'
 echo 'Requires root privileges:'
-sudo apt-get install -y --no-install-recommends darktable easytag filezilla gimp gimp-plugin-registry grsync inkscape mypaint nautilus-dropbox nautilus-open-terminal pyrenamer xchat
+sudo apt-get install -y --no-install-recommends filezilla gimp gimp-plugin-registry grsync inkscape nautilus-dropbox nautilus-open-terminal hamster-indicator -gtk-redshift zim synapse
 echo 'Done.'
 main
 }
@@ -36,7 +36,7 @@ main
 function toolinstall {
 echo 'Installing system tools...'
 echo 'Requires root privileges:'
-sudo apt-get install -y --no-install-recommends aptitude dconf-tools openjdk-7-jdk openssh-server p7zip-full ppa-purge samba ssh synaptic zsync
+sudo apt-get install -y --no-install-recommends dconf-tools openjdk-7-jdk openssh-server p7zip-full ppa-purge samba ssh synaptic zsync
 echo 'Done.'
 main
 }
@@ -134,7 +134,7 @@ function devinstall {
 # Install Development Tools
 echo 'Installing development tools...'
 echo 'Requires root privileges:'
-sudo apt-get install -y bzr git glade qtcreator ruby
+sudo apt-get install -y bzr git ruby zsh
 echo 'Done.'
 main
 }
